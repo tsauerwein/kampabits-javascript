@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+
+				print("Exercise a)");
+				/*
+					Exercise a):
+
+					Use a for-loop to print all numbers between 21 and 54.
+
+					21
+					22
+					23
+					...
+					53
+					54
+
+				*/
+
+				// add your solution for Exercise a) here:
+				for (var i = 21; i <= 54; i++) {
+					print(i);
+				}
+				
+				print("");
+				print("Exercise b)");
+				/*
+					Exercise b):
+
+					Use a for-loop to generate the following output.
+
+					3
+					6
+					9
+					...
+					18
+					21
+
+				*/
+
+				// add your solution for Exercise b) here:
+				for (var i = 3; i <= 21; i+=3) {
+					print(i);
+				}
+				
+				print("");
+				print("Exercise c)");
+				/*
+					Exercise c):
+
+					Use a for-loop to generate the following output.
+
+					1
+					4
+					9
+					16
+					25
+					...
+					81
+					100
+
+				*/
+
+				// add your solution for Exercise c) here:
+				for (var i = 1; i <= 10; i++) {
+					print(i*i);
+				}
+
+				print("");
+				print("Exercise d)");
+				/*
+					Exercise d):
+
+					Use a for-loop to generate the following output.
+
+					##########
+					#########
+					########
+					#######
+					######
+					#####
+					####
+					###
+					##
+					#
+
+				*/
+
+				// add your solution for Exercise d) here:
+				for (var i = 10; i >= 1; i--) {
+					var line = "";
+
+					for (var j = 1; j <= i; j++) {
+						line += "#";
+					}
+
+					print(line);
+				}
+				
+
+
+
+
+				print("");
+				print("Exercise e)");
+				/*
+					Exercise e):
+
+					Use a for-loop to calculate the sum of all numbers between 1 and 100.
+
+				*/
+
+				// add your solution for Exercise e) here:
+				var sum = 0;
+				for (var i = 1; i <= 100; i++) {
+					sum += i;
+				}
+				print(sum);
+				
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>

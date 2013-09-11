@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				print(5 % 2); 	// 1
+				print(4 % 2); 	// 0
+				print(27 % 5); 	// 2
+
+				if (5 % 2 === 0) {
+					print("5 is an even number");
+				} else {
+					print("5 is an odd number");
+				}
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>

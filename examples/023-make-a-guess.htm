@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				var numberToGuess = 35;
+
+				var numberFound = false;
+				while(!numberFound) {
+					var number = prompt("Make a guess!");
+
+					if (number < numberToGuess) {
+						alert("You entered " + number + ". " 
+							+ "The number we are looking for is bigger, try again!");
+					} else if (number > numberToGuess) {
+						alert("You entered " + number + ". " 
+							+ "The number we are looking for is smaller, try again!");
+					} else {
+						numberFound = true;
+						alert("Yes!");
+					}
+				}
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>

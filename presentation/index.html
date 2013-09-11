@@ -40,6 +40,23 @@
 					</p>
 				</section>
 
+<!-- Introduction -->
+
+				<section>
+					<h2>Before we start</h2>
+					<p>Tutorials and links</p>
+					<ul>
+						<li><a href="http://htmldog.com/guides/javascript/" target="_blank">
+							HTML Dog: JavaScript Tutorial</a></li>
+						<li><a href="http://eloquentjavascript.net/" target="_blank">
+							Eloquent JavaScript: A Modern Introduction to Programming</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+							Mozilla Developer Network: JavaScript (Guide, Reference, Links)</a></li>
+						<li><a href="http://www.codecademy.com/tracks/javascript" target="_blank">
+							Codecademy: Interactive online JavaScript course</a></li>
+					</ul>
+				</section>
+
 
 				<section>
 					<h2>Why learn JavaScript?</h2>
@@ -103,6 +120,7 @@ alert(&quot;Hello World!&quot;);
 					<p><a href="../examples/002-script.js" target="_blank">002-script.js</a></p>
 				</section>
 
+<!-- Variables -->
 
 				<section>
 					<h2>Variables: Names and Values</h2>
@@ -171,6 +189,7 @@ var active = false;
 					<p><a href="../examples/005-data-types.htm" target="_blank">005-data-types.htm</a></p>
 				</section>
 
+<!-- Operators -->
 
 				<section>
 					<h2>Operators</h2>
@@ -262,6 +281,8 @@ var a = 5;
 					<p><a href="../exercises/exc-001-b-number.htm" target="_blank">exercises/exc-001-b-number.htm</a></p>
 				</section>
 
+
+<!-- Conditions -->
 
 				<section>
 					<h2>Conditions</h2>
@@ -429,6 +450,227 @@ if (points > 80) {
 				</section>
 
 
+				<section>
+					<h2>Exercise 2</h2>
+
+					<p>Please open the following file and follow the given instructions:</p>
+					<p><a href="../exercises/exc-002-if.htm" target="_blank">exercises/exc-002-if.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Remainder operator %</h2>
+
+					<pre><code data-trim>
+print(5 % 2); 	// 1
+print(4 % 2); 	// 0
+print(27 % 5); 	// 2
+					</code></pre>
+
+					<div class="fragment">
+						<pre><code data-trim>
+if (5 % 2 === 0) {
+	print("5 is an even number");
+} else {
+	print("5 is an odd number");
+}
+						</code></pre>
+					<p><a href="../examples/016-remainder.htm" target="_blank">016-remainder.htm</a></p>
+					<p><br><small><code>print()</code> is a <em>user-defined</em> function, that adds 
+						text to the web page.</small></p>
+					</div>
+				</section>
+
+
+<!-- for -->
+
+				<section>
+					<h2>for loop</h2>
+
+					<p>Without loop</p>
+					<pre><code data-trim>
+print(1);
+print(2);
+print(3);
+print(4);
+print(5);
+					</code></pre>
+
+					<div class="fragment">
+						<p>With <code>for</code> loop</p>
+						<pre><code data-trim>
+for (var i = 1; i &lt;= 5; i = i + 1) {
+	print(i);
+}
+						</code></pre>
+						<p><a href="../examples/017-for.htm" target="_blank">017-for.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Example for a for loop</h2>
+
+					<pre><code data-trim>
+for (var i = 0; i &lt;= 100; i++) {
+	if (i % 2 === 0) {
+		print(i);
+	}
+}
+					</code></pre>
+
+					<div class="fragment">
+						<p>all even numbers between 0 and 100</p>
+						<p><a href="../examples/018-for-even.htm" target="_blank">018-for-even.htm</a></p>
+						<p>&nbsp;</p>
+						<pre><code data-trim>
+i = i + 1;
+i += 1;
+i++;
+						</code></pre>
+						<p>incrementing by 1</p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Example for a for loop</h2>
+
+					<pre><code data-trim>
+for (var i = 1; i >= 1; i++) {
+	print(i);
+}
+					</code></pre>
+
+					<div class="fragment">
+						<p>infinite loop</p>
+						<p><a href="../examples/019-infinite-loop.htm" target="_blank">019-infinite-loop.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Example for a for loop</h2>
+
+					<pre><code data-trim>
+for (var i = 100; i >= 0; i--) {
+	print(i);
+}
+					</code></pre>
+
+					<div class="fragment">
+						<p>counting down from 100 to 0</p>
+						<p><a href="../examples/020-counting-down.htm" target="_blank">020-counting-down.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Example for a for loop</h2>
+
+					<pre><code data-trim>
+for (var i = 1; i <= 10; i++) {
+	var line = "";
+
+	for (var j = 1; j <= i; j++) {
+		line += "#";
+	}
+
+	print(line);
+}
+					</code></pre>
+
+					<div class="fragment">
+						<p>nested loops</p>
+						<p><a href="../examples/021-nested-loop.htm" target="_blank">021-nested-loop.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Exercise 3</h2>
+
+					<p>Please open the following file and follow the given instructions:</p>
+					<p><a href="../exercises/exc-003-for.htm" target="_blank">exercises/exc-003-for.htm</a></p>
+				</section>
+
+
+<!-- while -->
+
+				<section>
+					<h2>While loop</h2>
+
+					<pre><code data-trim>
+var i = 0;
+while(i <= 10) {
+	print(i);
+	i++;
+}
+					</code></pre>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>does the same as the following <code>for</code> loop:</p>
+						<pre><code data-trim>
+for(var i = 0; i <= 10; i++) {
+	print(i);
+}
+						</code></pre>
+						<p><a href="../examples/022-while.htm" target="_blank">022-while.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>for and while</h2>
+
+					<p>All loops can be written as <code>for</code> or as
+						<code>while</code> loop.
+					</p>
+					<p>&nbsp;</p>
+
+					<ul>
+						<li>Use <code>for</code> loops, if you know how often you'll loop.</li>
+						<li>Use <code>while</code> loops, if you <strong>don't</strong> know how often you'll loop.</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>Game: Make-a-guess</h2>
+
+					<pre><code data-trim>
+var numberToGuess = 35;
+
+var numberFound = false;
+while(!numberFound) {
+	var number = prompt("Make a guess!");
+
+	if (number < numberToGuess) {
+		alert("You entered " + number + ". " 
+			+ "The number we are looking for is bigger, try again!");
+	} else if (number > numberToGuess) {
+		alert("You entered " + number + ". " 
+			+ "The number we are looking for is smaller, try again!");
+	} else {
+		numberFound = true;
+		alert("Yes!");
+	}
+}
+					</code></pre>
+
+					<p><a href="../examples/023-make-a-guess.htm" target="_blank">023-make-a-guess.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Exercise 4</h2>
+
+					<p>Please open the following file and follow the given instructions:</p>
+					<p><a href="../exercises/exc-004-while.htm" target="_blank">exercises/exc-004-while.htm</a></p>
+				</section>
+
+
 			</div>
 
 		</div>
@@ -454,7 +696,9 @@ if (points > 80) {
 					{ src: 'revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() {
+						hljs.tabReplace = '    ';
+						hljs.initHighlightingOnLoad(); } },
 					{ src: 'revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]

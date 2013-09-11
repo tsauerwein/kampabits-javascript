@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				var i = 0;
+				while(i <= 10) {
+					print(i);
+					i++;
+				}
+
+				// does the same as the following for loop
+				for(var i = 0; i <= 10; i++) {
+					print(i);
+				}
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>
