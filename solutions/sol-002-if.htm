@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript">
+			/*
+				Exercise:
+
+				Write a program that asks the user to enter two numbers. Show the larger number of the two in a message. If the two numbers are equal, tell the user.  
+
+				"Please enter a first number" -> 4
+				"Please enter a second number" -> 6
+				"The second number is larger: 4 < 6"
+
+				"Please enter a first number" -> 4
+				"Please enter a second number" -> 4
+				"The two numbers are equal."
+			*/
+
+			var firstNumber = prompt("Please enter a first number");
+			var sndNumber = prompt("Please enter a second number");
+
+			if (firstNumber > sndNumber) {
+				alert("The first number is larger: " 
+					+ firstNumber + " > " + sndNumber);
+			} else if (firstNumber < sndNumber) {
+				alert("The second number is larger: " 
+					+ firstNumber + " < " + sndNumber);
+			} else {
+				alert("The two numbers are equal.");
+			}
+
+		</script>
+	</head>
+
+	<body>
+	</body>
+</html>

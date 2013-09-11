@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>JavaScript - Kampabits</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="revealjs/css/reveal.min.css">
+		<link rel="stylesheet" href="revealjs/css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="revealjs/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="revealjs/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section>
+					<h1>JavaScript</h1>
+					<h3>Kampabits - 2013</h3>
+					<p>
+						<small>Tobias Sauerwein <a href="http://twitter.com/tsauerwein">@tsauerwein</a></small>
+					</p>
+				</section>
+
+
+				<section>
+					<h2>Why learn JavaScript?</h2>
+					<ul>
+						<li>Essential for web development</li>
+						<li>Not only for animations and games!</li>
+						<li>Web applications: Google Maps, Google Mail, Facebook, ... </li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>What is JavaScript?</h2>
+
+					<p>HTML is for <strong>content</strong></p>
+					<p>CSS is for <strong>presentation</strong></p>
+					<p>JavaScript is for <strong>interactivity</strong></p>
+				</section>
+
+
+				<section>
+					<h2>Getting started with JavaScript</h2>
+
+					<pre><code data-trim>
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;script type=&quot;text/javascript&quot;&gt;
+			alert(&quot;Hello World!&quot;);
+		&lt;/script&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		Plain HTML page
+	&lt;/body&gt;
+&lt;/html&gt;
+					</code></pre>
+					<p><a href="../examples/001-hello-world.htm" target="_blank">001-hello-world.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>External JavaScript files</h2>
+
+					<pre><code data-trim>
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;script src=&quot;002-script.js&quot;&gt;&lt;/script&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		Plain HTML page
+	&lt;/body&gt;
+&lt;/html&gt;
+					</code></pre>
+					<p><a href="../examples/002-external.htm" target="_blank">002-external.htm</a></p>
+					<p>&nbsp;</p>
+
+					<pre><code data-trim>
+alert(&quot;Hello World!&quot;);
+					</code></pre>
+					<p><a href="../examples/002-script.js" target="_blank">002-script.js</a></p>
+				</section>
+
+
+				<section>
+					<h2>Variables: Names and Values</h2>
+
+					<pre><code data-trim>
+var name = "Peter";
+var lastName = "Anderson";
+var age = 34;
+var married = true;
+					</code></pre>
+					<p><a href="../examples/003-variables-values.htm" target="_blank">003-variables-values.htm</a></p>
+					<br>
+					<p>Variables have a <strong>name</strong> and a <strong>value</strong></p>
+				</section>
+
+
+				<section>
+					<h2>Declaration, initialization, assignment</h2>
+
+					<p>Declaration</p>
+					<pre><code data-trim>
+var name;
+var lastName;
+					</code></pre>
+
+					<p>Initialization</p>
+					<pre><code data-trim>
+var name = "Peter";
+var lastName = "Anderson";
+					</code></pre>
+
+					<p>Assignment <br><small>after declaration or initialization</small></p>
+
+					<pre><code data-trim>
+name = "Peter";
+lastName = "Anderson";
+					</code></pre>
+
+					<p><a href="../examples/004-variables.htm" target="_blank">004-variables.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Data types</h2>
+
+					<p>Numbers</p>
+					<pre><code data-trim>
+var age = 34;
+var price = 9.5;
+var result = 2.998e8;
+					</code></pre>
+
+					<p>Strings (text)</p>
+					<pre><code data-trim>
+var name = "Peter";
+var lastName = "Anderson";
+					</code></pre>
+
+					<p>Boolean (<code>true</code> or <code>false</code>)</p>
+
+					<pre><code data-trim>
+var married = true;
+var active = false;
+					</code></pre>
+
+					<p><a href="../examples/005-data-types.htm" target="_blank">005-data-types.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Operators</h2>
+
+					<p>Mathematical operations with numbers</p>
+					<pre><code data-trim>
+var a = 3 + 4;
+var b = 5 - 6;
+var c = 7 * 8;
+var d = 10 / 5;
+
+var e = a + b;
+var f = a * (b + c) + 10;
+					</code></pre>
+
+					<p><a href="../examples/006-operators-numbers.htm" target="_blank">006-operators-numbers.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Operators for strings</h2>
+
+					<p>String concatenation</p>
+					<pre><code data-trim>
+var firstName = "Peter";
+var lastName = "Anderson";
+
+var name = firstName + " " + lastName;
+					</code></pre>
+
+					<p><a href="../examples/007-string-concatenation.htm" target="_blank">007-string-concatenation.htm</a></p>
+					<p><br><small>Later we will see that we can do more with strings!</small></p>
+				</section>
+
+
+				<section>
+					<h2>Input and output</h2>
+
+					<p>Showing a message with <strong>alert()</strong></p>
+					<pre><code data-trim>
+var result = 1024 / 8;
+alert(result);
+					</code></pre>
+
+					<p><a href="../examples/008-alert.htm" target="_blank">008-alert.htm</a></p>
+					<p>&nbsp;</p>
+
+					<div class="fragment">
+						<p>Requesting input with <strong>prompt()</strong></p>
+						<pre><code data-trim>
+var name = prompt("Hello! What is your name?");
+alert("Hello " + name);
+						</code></pre>
+
+						<p><a href="../examples/009-alert-prompt.htm" target="_blank">009-alert-prompt.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Comments</h2>
+
+					<p>Single-line comments</p>
+					<pre><code data-trim>
+// This is a comment
+var a = 5;
+// The next line is not executed:
+// var b = 6;
+					</code></pre>
+
+					<p>Multi-line comments</p>
+					<pre><code data-trim>
+/* This is
+   a multi-line
+
+   comment!
+*/ 
+					</code></pre>
+
+					<p><a href="../examples/010-comments.htm" target="_blank">010-comments.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Exercise 1</h2>
+
+					<p>Please open the two following files and follow the given instructions:</p>
+					<p><a href="../exercises/exc-001-a-greeting.htm" target="_blank">exercises/exc-001-a-greeting.htm</a></p>
+					<p><a href="../exercises/exc-001-b-number.htm" target="_blank">exercises/exc-001-b-number.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Conditions</h2>
+
+					<p>if-statement</p>
+					<pre><code data-trim>
+var age = 34;
+
+if (age > 18) {
+	alert("You are older than 18!");
+}
+					</code></pre>
+
+					<p><small><strong>if</strong> the <strong>condition</strong> (between the parentheses)
+					 is true,<br>
+						then the <strong>block</strong> between the braces "{" and "}" is executed.</small></p>
+
+					<div class="fragment">
+						<p>if-else</p>
+						<pre><code data-trim>
+if (age > 18) {
+	alert("You are older than 18!");
+} else {
+	alert("You are younger than 18!");
+}
+						</code></pre>
+
+						<p><a href="../examples/011-if.htm" target="_blank">011-if.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Comparisons: greater/less than</h2>
+
+					<p>greater than</p>
+					<pre><code data-trim>
+if (a > b) {
+	// ...
+}
+					</code></pre>
+
+					<p>less than</p>
+					<pre><code data-trim>
+if (a < b) {
+	// ...
+}
+					</code></pre>
+
+					<p>greater than or equals</p>
+					<pre><code data-trim>
+if (a >= b) {
+	// ...
+}
+					</code></pre>
+
+					<p>less than or equals</p>
+					<pre><code data-trim>
+if (a <= b) {
+	// ...
+}
+					</code></pre>
+
+					<p><a href="../examples/012-logic-gt-lt.htm" target="_blank">012-logic-gt-lt.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Equality</h2>
+
+					<p>triple equals</p>
+					<pre><code data-trim>
+if (1.25 === 1.25) {
+	// true
+}
+					</code></pre>
+
+					<p>triple not equals</p>
+					<pre><code data-trim>
+if (1.25 !== 2.5) {
+	// true
+}
+					</code></pre>
+
+					<p>comparing strings and numbers</p>
+					<pre><code data-trim>
+if (4 === "4") {
+	// false
+}
+					</code></pre>
+					<p><a href="../examples/013-logic-equals.htm" target="_blank">013-logic-equals.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>AND, OR and NOT</h2>
+
+					<p>and - &&</p>
+					<pre><code data-trim>
+if (a > 60 && a < 80) {
+	// between 60 and 80
+}
+					</code></pre>
+
+					<div class="fragment">
+						<p>or - ||</p>
+						<pre><code data-trim>
+if (b < 23 || b > 56) {
+	// smaller than 23 or greater than 56
+}
+						</code></pre>
+					</div>
+
+					<div class="fragment">
+						<p>not - !</p>
+						<pre><code data-trim>
+if (!(a > 23)) {
+	// not greater than 23
+}
+						</code></pre>
+					<p><a href="../examples/014-logic-and-or.htm" target="_blank">014-logic-and-or.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Combined boolean expressions</h2>
+
+					<pre><code data-trim>
+if (a < 45 && (b < 23 || b > 56)) {
+	// ...
+}
+					</code></pre>
+
+					<div class="fragment">
+						<pre><code data-trim>
+var active = false;
+if (!active && (b < 23 || b > 56)) {
+	// ...
+}
+						</code></pre>
+					<p><a href="../examples/014-logic-and-or.htm" target="_blank">014-logic-and-or.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>else-if</h2>
+
+					<pre><code data-trim>
+var points = 34;
+var grade = "";
+
+if (points > 80) {
+	grade = "A";
+} else if (points > 60) {
+	grade = "B";
+} else if (points > 40) {
+	grade = "C";
+} else {
+	grade = "F";
+}
+					</code></pre>
+					<p><a href="../examples/015-else-if.htm" target="_blank">015-else-if.htm</a></p>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="revealjs/lib/js/head.min.js"></script>
+		<script src="revealjs/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

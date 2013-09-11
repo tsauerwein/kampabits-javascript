@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript">
+			var a = 75;
+			var b = 23;
+
+			// and: &&
+			if (a > 60 && a < 80) {
+				// between 60 and 80
+			}
+
+			// or: ||
+			if (b < 23 || b > 56) {
+				// smaller than 23 or greater than 56
+			}
+
+			// not: !
+			if (!(a > 23)) {
+				// not greater than 23
+			}
+
+			// combinations
+			if (a < 45 && (b < 23 || b > 56)) {
+				// ...
+			}
+
+			var active = false;
+			if (!active && (b < 23 || b > 56)) {
+				// ...
+			}
+		</script>
+	</head>
+
+	<body>
+	</body>
+</html>

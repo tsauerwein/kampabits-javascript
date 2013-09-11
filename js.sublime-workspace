@@ -1,0 +1,393 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fir",
+				"firstNumber"
+			],
+			[
+				"s",
+				"square"
+			],
+			[
+				"last",
+				"lastName"
+			],
+			[
+				"first",
+				"firstName"
+			],
+			[
+				"co",
+				"code	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/tobias/Downloads/reveal.js-2.5.0/reveal.js-2.5.0/index.html",
+			"settings":
+			{
+				"buffer_size": 13581,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "presentation/index.html",
+			"settings":
+			{
+				"buffer_size": 10923,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "examples/015-else-if.htm",
+			"settings":
+			{
+				"buffer_size": 317,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "solutions/sol-001-b-number.htm",
+			"settings":
+			{
+				"buffer_size": 443,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "exercises/exc-001-a-greeting.htm",
+			"settings":
+			{
+				"buffer_size": 369,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "solutions/sol-002-if.htm",
+			"settings":
+			{
+				"buffer_size": 950,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/kampabits/javascript/solutions/sol-001-greeting.htm",
+		"/D/kampabits/javascript/examples/013-logic-equals.htm",
+		"/D/kampabits/javascript/examples/012-logic.htm",
+		"/D/kampabits/javascript/js.sublime-workspace",
+		"/D/kampabits/javascript/examples/008-alert.htm",
+		"/D/kampabits/javascript/examples/009-comments.htm",
+		"/D/kampabits/javascript/examples/009-alert-prompt.htm",
+		"/D/kampabits/javascript/examples/008-alert-prompt.htm",
+		"/C/Users/tobias/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/D/kampabits/javascript/examples/002-script.js",
+		"/D/kampabits/javascript/examples/002-external.htm",
+		"/D/kampabits/javascript/examples/002-internal.htm",
+		"/D/kampabits/javascript/presentation/style.css",
+		"/C/Users/tobias/Downloads/template/template/index.html",
+		"/D/kampabits/javascript/presentation_/index.html",
+		"/C/Users/tobias/Downloads/reveal.js-2.5.0/reveal.js-2.5.0/index.html",
+		"/D/kampabits/javascript/presentation/index.html",
+		"/C/Users/tobias/Dropbox/tobnb/notes/random-notes.txt",
+		"/C/Users/tobias/Dropbox/tobnb/notes/food.txt",
+		"/C/Users/tobias/Dropbox/tobnb/notes/uganda-rwanda.txt",
+		"/C/Users/tobias/Downloads/reveal.js-2.5.0/reveal.js-2.5.0/README.md",
+		"/C/Users/tobias/Dropbox/tobnb/notes/nairobits-workshops.txt",
+		"/C/Users/tobias/Dropbox/tobnb/notes/kampabits",
+		"/C/Users/tobias/Dropbox/tobnb/notes/2013-09-07.txt",
+		"/C/Users/tobias/Dropbox/tobnb/notes/2013-07-06.txt",
+		"/C/Users/tobias/Dropbox/tobnb/notes/2013-07-27.txt",
+		"/C/wamp/www/weinshop-v2/protected/data/update-fts-index.sqlite.sql",
+		"/G/SysConfig.dat"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"D:\\teaching\\actt"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"actt"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/tobias/Downloads/reveal.js-2.5.0/reveal.js-2.5.0/index.html",
+					"settings":
+					{
+						"buffer_size": 13581,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9950,
+								9966
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6853.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "presentation/index.html",
+					"settings":
+					{
+						"buffer_size": 10923,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5734,
+								5734
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5351.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "examples/015-else-if.htm",
+					"settings":
+					{
+						"buffer_size": 317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								269,
+								65
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "solutions/sol-001-b-number.htm",
+					"settings":
+					{
+						"buffer_size": 443,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								417,
+								417
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "exercises/exc-001-a-greeting.htm",
+					"settings":
+					{
+						"buffer_size": 369,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								291,
+								291
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "solutions/sol-002-if.htm",
+					"settings":
+					{
+						"buffer_size": 950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								366,
+								366
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
