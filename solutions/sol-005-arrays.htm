@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+
+				print("Exercise a)");
+				/*
+					Exercise a):
+
+					Add all even numbers between 1 and 100 to the array 'evenNumbers'.
+					Then print all elements in the array.
+
+				*/
+
+				// add your solution for Exercise a) here:
+				var evenNumbers = [];
+
+				// first add all even numbers
+				for(var i = 1; i <= 100; i++) {
+					if (i % 2 === 0) {
+						evenNumbers.push(i);
+					}
+				}
+				
+				// then print out every element of the array
+				for(var i = 0; i < evenNumbers.length; i++) {
+					print(evenNumbers[i]);
+				}
+
+
+				print("");
+				print("Exercise b)");
+				/*
+					Exercise b):
+
+					Write a for-loop that finds the largest number in the
+					array 'numbers1'.
+
+					Note: You can assume that there are only positive numbers
+					in the array.
+
+					Extra task: Change you program so that it also works for
+					negative numbers.
+
+				*/
+
+				// add your solution for Exercise b) here:
+				var numbers1 = [23, 89, 1, 23, 53, 103, 23];
+				var largest = 0;
+
+				for(var i = 0; i < numbers1.length; i++) {
+					// if the current number is larger than the largest number
+					// we have found so far, remember the current number
+					if (numbers1[i] > largest) {
+						largest =  numbers1[i];
+					}
+				}
+				
+				print(largest);
+				
+
+				print("");
+				print("Exercise c)");
+				/*
+					Exercise c):
+
+					Use a for-loop to calculate the sum of all numbers in the
+					array 'numbers2'.
+
+				*/
+
+				// add your solution for Exercise c) here:
+				var numbers2 = [23, 89, 1, 23, 53, 103, 23];
+				var sum = 0;
+
+				for(var i = 0; i < numbers2.length; i++) {
+					sum += numbers2[i];
+				}
+				
+				print(sum);
+				
+
+				print("");
+				print("Exercise d)");
+				/*
+					Exercise d):
+
+					Replace every number in the array 'numbers3' with
+					its square. Then print all elements of the array.
+
+					For example the array [4, 6, 3, 1] should become
+					[16, 36, 9, 1].
+
+				*/
+
+				// add your solution for Exercise d) here:
+				var numbers3 = [5, 8, 12, 99, 34, 8];
+
+				for(var i = 0; i < numbers3.length; i++) {
+					var square = numbers3[i] * numbers3[i];
+					numbers3[i] = square;
+				}
+
+				for(var i = 0; i < numbers3.length; i++) {
+					print(numbers3[i]);
+				}
+
+
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>

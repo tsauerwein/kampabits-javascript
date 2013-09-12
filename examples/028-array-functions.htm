@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				var names = ["Peter", "Michael", "John", "Bob"];
+
+				// number of elements in an array
+				print(names.length);	// 4
+
+				// adding an element to an array
+				names.push("Steve");
+				print(names.length);	// 5
+				print(names[4]);		// Steve
+
+				// removing the last element
+				names.pop();
+				print(names.length);	// 4
+				print(names[4]);		// undefined
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>

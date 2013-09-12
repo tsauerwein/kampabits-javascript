@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				var names = ["Peter", "Michael", "John", "Bob"];
+
+				print(names[2]);	// John
+
+				// we are changing the element at position 2
+				names[2] = "Johnny";
+
+				print(names[2]);	// Johnny
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>

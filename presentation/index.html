@@ -80,7 +80,7 @@
 				<section>
 					<h2>Getting started with JavaScript</h2>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="html">
 &lt;html&gt;
 	&lt;head&gt;
 		&lt;script type=&quot;text/javascript&quot;&gt;
@@ -100,7 +100,7 @@
 				<section>
 					<h2>External JavaScript files</h2>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="html">
 &lt;html&gt;
 	&lt;head&gt;
 		&lt;script src=&quot;002-script.js&quot;&gt;&lt;/script&gt;
@@ -114,7 +114,7 @@
 					<p><a href="../examples/002-external.htm" target="_blank">002-external.htm</a></p>
 					<p>&nbsp;</p>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 alert(&quot;Hello World!&quot;);
 					</code></pre>
 					<p><a href="../examples/002-script.js" target="_blank">002-script.js</a></p>
@@ -125,7 +125,7 @@ alert(&quot;Hello World!&quot;);
 				<section>
 					<h2>Variables: Names and Values</h2>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 var name = "Peter";
 var lastName = "Anderson";
 var age = 34;
@@ -141,20 +141,20 @@ var married = true;
 					<h2>Declaration, initialization, assignment</h2>
 
 					<p>Declaration</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 var name;
 var lastName;
 					</code></pre>
 
 					<p>Initialization</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 var name = "Peter";
 var lastName = "Anderson";
 					</code></pre>
 
 					<p>Assignment <br><small>after declaration or initialization</small></p>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 name = "Peter";
 lastName = "Anderson";
 					</code></pre>
@@ -167,21 +167,21 @@ lastName = "Anderson";
 					<h2>Data types</h2>
 
 					<p>Numbers</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 var age = 34;
 var price = 9.5;
 var result = 2.998e8;
 					</code></pre>
 
 					<p>Strings (text)</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 var name = "Peter";
 var lastName = "Anderson";
 					</code></pre>
 
 					<p>Boolean (<code>true</code> or <code>false</code>)</p>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 var married = true;
 var active = false;
 					</code></pre>
@@ -195,7 +195,7 @@ var active = false;
 					<h2>Operators</h2>
 
 					<p>Mathematical operations with numbers</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 var a = 3 + 4;
 var b = 5 - 6;
 var c = 7 * 8;
@@ -213,7 +213,7 @@ var f = a * (b + c) + 10;
 					<h2>Operators for strings</h2>
 
 					<p>String concatenation</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 var firstName = "Peter";
 var lastName = "Anderson";
 
@@ -229,7 +229,7 @@ var name = firstName + " " + lastName;
 					<h2>Input and output</h2>
 
 					<p>Showing a message with <strong>alert()</strong></p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 var result = 1024 / 8;
 alert(result);
 					</code></pre>
@@ -239,7 +239,7 @@ alert(result);
 
 					<div class="fragment">
 						<p>Requesting input with <strong>prompt()</strong></p>
-						<pre><code data-trim>
+						<pre><code data-trim class="javascript">
 var name = prompt("Hello! What is your name?");
 alert("Hello " + name);
 						</code></pre>
@@ -253,7 +253,7 @@ alert("Hello " + name);
 					<h2>Comments</h2>
 
 					<p>Single-line comments</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 // This is a comment
 var a = 5;
 // The next line is not executed:
@@ -261,7 +261,7 @@ var a = 5;
 					</code></pre>
 
 					<p>Multi-line comments</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 /* This is
    a multi-line
 
@@ -288,7 +288,7 @@ var a = 5;
 					<h2>Conditions</h2>
 
 					<p>if-statement</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 var age = 34;
 
 if (age > 18) {
@@ -302,7 +302,7 @@ if (age > 18) {
 
 					<div class="fragment">
 						<p>if-else</p>
-						<pre><code data-trim>
+						<pre><code data-trim class="javascript">
 if (age > 18) {
 	alert("You are older than 18!");
 } else {
@@ -319,28 +319,28 @@ if (age > 18) {
 					<h2>Comparisons: greater/less than</h2>
 
 					<p>greater than</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 if (a > b) {
 	// ...
 }
 					</code></pre>
 
 					<p>less than</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 if (a < b) {
 	// ...
 }
 					</code></pre>
 
 					<p>greater than or equals</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 if (a >= b) {
 	// ...
 }
 					</code></pre>
 
 					<p>less than or equals</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 if (a <= b) {
 	// ...
 }
@@ -354,21 +354,21 @@ if (a <= b) {
 					<h2>Equality</h2>
 
 					<p>triple equals</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 if (1.25 === 1.25) {
 	// true
 }
 					</code></pre>
 
 					<p>triple not equals</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 if (1.25 !== 2.5) {
 	// true
 }
 					</code></pre>
 
 					<p>comparing strings and numbers</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 if (4 === "4") {
 	// false
 }
@@ -381,7 +381,7 @@ if (4 === "4") {
 					<h2>AND, OR and NOT</h2>
 
 					<p>and - &&</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 if (a > 60 && a < 80) {
 	// between 60 and 80
 }
@@ -389,7 +389,7 @@ if (a > 60 && a < 80) {
 
 					<div class="fragment">
 						<p>or - ||</p>
-						<pre><code data-trim>
+						<pre><code data-trim class="javascript">
 if (b < 23 || b > 56) {
 	// smaller than 23 or greater than 56
 }
@@ -398,7 +398,7 @@ if (b < 23 || b > 56) {
 
 					<div class="fragment">
 						<p>not - !</p>
-						<pre><code data-trim>
+						<pre><code data-trim class="javascript">
 if (!(a > 23)) {
 	// not greater than 23
 }
@@ -411,14 +411,14 @@ if (!(a > 23)) {
 				<section>
 					<h2>Combined boolean expressions</h2>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 if (a < 45 && (b < 23 || b > 56)) {
 	// ...
 }
 					</code></pre>
 
 					<div class="fragment">
-						<pre><code data-trim>
+						<pre><code data-trim class="javascript">
 var active = false;
 if (!active && (b < 23 || b > 56)) {
 	// ...
@@ -432,7 +432,7 @@ if (!active && (b < 23 || b > 56)) {
 				<section>
 					<h2>else-if</h2>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 var points = 34;
 var grade = "";
 
@@ -461,14 +461,14 @@ if (points > 80) {
 				<section>
 					<h2>Remainder operator %</h2>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 print(5 % 2); 	// 1
 print(4 % 2); 	// 0
 print(27 % 5); 	// 2
 					</code></pre>
 
 					<div class="fragment">
-						<pre><code data-trim>
+						<pre><code data-trim class="javascript">
 if (5 % 2 === 0) {
 	print("5 is an even number");
 } else {
@@ -488,7 +488,7 @@ if (5 % 2 === 0) {
 					<h2>for loop</h2>
 
 					<p>Without loop</p>
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 print(1);
 print(2);
 print(3);
@@ -498,7 +498,7 @@ print(5);
 
 					<div class="fragment">
 						<p>With <code>for</code> loop</p>
-						<pre><code data-trim>
+						<pre><code data-trim class="javascript">
 for (var i = 1; i &lt;= 5; i = i + 1) {
 	print(i);
 }
@@ -511,7 +511,7 @@ for (var i = 1; i &lt;= 5; i = i + 1) {
 				<section>
 					<h2>Example for a for loop</h2>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 for (var i = 0; i &lt;= 100; i++) {
 	if (i % 2 === 0) {
 		print(i);
@@ -523,7 +523,7 @@ for (var i = 0; i &lt;= 100; i++) {
 						<p>all even numbers between 0 and 100</p>
 						<p><a href="../examples/018-for-even.htm" target="_blank">018-for-even.htm</a></p>
 						<p>&nbsp;</p>
-						<pre><code data-trim>
+						<pre><code data-trim class="javascript">
 i = i + 1;
 i += 1;
 i++;
@@ -536,7 +536,7 @@ i++;
 				<section>
 					<h2>Example for a for loop</h2>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 for (var i = 1; i >= 1; i++) {
 	print(i);
 }
@@ -552,7 +552,7 @@ for (var i = 1; i >= 1; i++) {
 				<section>
 					<h2>Example for a for loop</h2>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 for (var i = 100; i >= 0; i--) {
 	print(i);
 }
@@ -568,7 +568,7 @@ for (var i = 100; i >= 0; i--) {
 				<section>
 					<h2>Example for a for loop</h2>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 for (var i = 1; i <= 10; i++) {
 	var line = "";
 
@@ -600,7 +600,7 @@ for (var i = 1; i <= 10; i++) {
 				<section>
 					<h2>While loop</h2>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 var i = 0;
 while(i <= 10) {
 	print(i);
@@ -611,7 +611,7 @@ while(i <= 10) {
 					<div class="fragment">
 						<p>&nbsp;</p>
 						<p>does the same as the following <code>for</code> loop:</p>
-						<pre><code data-trim>
+						<pre><code data-trim class="javascript">
 for(var i = 0; i <= 10; i++) {
 	print(i);
 }
@@ -639,7 +639,7 @@ for(var i = 0; i <= 10; i++) {
 				<section>
 					<h2>Game: Make-a-guess</h2>
 
-					<pre><code data-trim>
+					<pre><code data-trim class="javascript">
 var numberToGuess = 35;
 
 var numberFound = false;
@@ -668,6 +668,158 @@ while(!numberFound) {
 
 					<p>Please open the following file and follow the given instructions:</p>
 					<p><a href="../exercises/exc-004-while.htm" target="_blank">exercises/exc-004-while.htm</a></p>
+				</section>
+
+
+<!-- Arrays -->
+
+				<section>
+					<h2>Introducing arrays</h2>
+
+					<pre><code data-trim class="javascript">
+var name1 = "Peter";
+var name2 = "Michael";
+var name3 = "John";
+var name4 = "Bob";
+					</code></pre>
+					<p><br>normal variables can only store <strong>one value</strong></p>
+
+					<div class="fragment">
+						<p><br>arrays can store <strong>lists of data</strong></p>
+						<pre><code data-trim class="javascript">
+var names = ["Peter", "Michael", "John", "Bob"];
+						</code></pre>
+						<p><a href="../examples/024-arrays.htm" target="_blank">024-arrays.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Examples for arrays</h2>
+
+					<pre><code data-trim class="javascript">
+// empty array
+var a = [];
+
+// array with strings
+var names = ["Peter", "Michael", "John", "Bob"];
+
+// array with numbers
+var ages = [23, 18, 34, 56, 67];
+
+// mixed array
+var mixed = ["abc", 12, "def", 34, "ghi", 56];
+					</code></pre>
+					<p><a href="../examples/025-arrays-examples.htm" target="_blank">025-arrays-examples.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Accessing array elements</h2>
+
+					<pre><code data-trim class="javascript">
+var names = ["Peter", "Michael", "John", "Bob"];
+
+print(names[0]);	// Peter
+print(names[2]);	// John
+print(names[3]);	// Bob
+					</code></pre>
+					<p><a href="../examples/026-array-get.htm" target="_blank">026-array-get.htm</a></p>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<ul>
+							<li>Each element in an array has a fixed position</li>
+							<li>The position of the <strong>first</strong> element is <strong>0</strong></li>
+						</ul>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Changing array elements</h2>
+
+					<pre><code data-trim class="javascript">
+var names = ["Peter", "Michael", "John", "Bob"];
+
+print(names[2]);	// John
+
+// we are changing the element at position 2
+names[2] = "Johnny";
+
+print(names[2]);	// Johnny
+					</code></pre>
+					<p><a href="../examples/027-array-set.htm" target="_blank">027-array-set.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Array functions</h2>
+
+					<p>number of elements in an array</p>
+					<pre><code data-trim class="javascript">
+var names = ["Peter", "Michael", "John", "Bob"];
+print(names.length);	// 4
+					</code></pre>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>adding an element to an array with <code>push()</code></p>
+						<pre><code data-trim class="javascript">
+names.push("Steve");
+print(names.length);   // 5
+print(names[4]);       // Steve
+						</code></pre>
+					</div>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>removing the last element with <code>pop()</code></p>
+						<pre><code data-trim class="javascript">
+names.pop();
+print(names.length);    // 4
+print(names[4]);        // undefined
+						</code></pre>
+						<p><a href="../examples/028-array-functions.htm" target="_blank">028-array-functions.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Arrays and loops</h2>
+
+					<pre><code data-trim class="javascript">
+var names = ["Peter", "Michael", "John", "Bob"];
+
+for(var i = 0; i < names.length; i++) {
+	print(names[i]);
+}
+					</code></pre>
+					<p><a href="../examples/029-arrays-and-loops.htm" target="_blank">029-arrays-and-loops.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Exercise 5</h2>
+
+					<p>Please open the following file and follow the given instructions:</p>
+					<p><a href="../exercises/exc-005-arrays.htm" target="_blank">exercises/exc-005-arrays.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Spot the mistakes</h2>
+
+
+					<p>The following code contains some mistakes. Can you see what is wrong?</p>
+					<pre><code data-trim class="javascript">
+var names = ["Peter", "Michael", "John", "Bob"];
+
+for(var i = 1; i <= names.length; j++) {
+	print(names);
+}
+					</code></pre>
+					<p><a href="../examples/030-array-mistakes.htm" target="_blank">030-array-mistakes.htm</a></p>
 				</section>
 
 
