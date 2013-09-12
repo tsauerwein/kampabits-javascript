@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				var numbers = [];
+
+				// let the user enter number by number
+				var stop = false;
+				while(!stop) {
+					// ask the user to enter a new number
+					var newNumber = prompt("Please enter a number or leave the field empty " 
+						+ "if you want to stop!");
+
+					if(newNumber === null || newNumber === "") {
+						// no number was entered, so stop
+						stop = true;
+					} else {
+						// otherwise add the number to the array
+						numbers.push(newNumber);
+					}
+				}
+
+				// now let's find the largest number of all entered numbers
+				if(numbers.length === 0) {
+					alert("No number was entered!");
+				} else {
+					var largest = numbers[0];
+
+					for(var i = 1; i < numbers.length; i++) {
+						if(largest < numbers[i]) {
+							largest = numbers[i];
+						}
+					}
+
+					alert("The largest number is " + largest);
+				}
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>

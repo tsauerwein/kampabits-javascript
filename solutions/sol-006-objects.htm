@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+
+				print("Exercise a)");
+				/*
+					Exercise a):
+
+					Create an object for a car. Use meaningful properties (at least 3).
+
+				*/
+
+				// add your solution for Exercise a) here:
+				var car = {
+					name: "Volkswagen Beetle",
+					manufacturer: "Volkswagen",
+					type: "economy car",
+					doors: 2,
+					topSpeed: 115
+				};
+
+				print("");
+				print("Exercise b)");
+				/*
+					Exercise b):
+
+					We want to store the following products. Create objects for every
+					product with meaningful properties and store all products in an array.
+
+					Product 1: 
+						Samsung Galaxy Rush, 59.99$, 3.8 ounces (weight),
+						 4.8 x 2.4 x 0.5 inches (dimension), Android 4.0, In stock
+					Product 2:
+						LG Venice, 149.99$, 4.5 ounces (weight), 
+						 2.6 x 0.3 x 4.9 inches (dimension), Android 4.1, Not in stock
+					Product 3:
+						BlackBerry Curve 9310, 59.99$, 3.5 ounces (weight), 
+						 2.4 x 0.5 x 4.3 inches (dimension), BlackBerry 7 OS, In stock
+				*/
+
+				// add your solution for Exercise b) here:
+				var product1 = {
+					name: "Samsung Galaxy Rush",
+					price: 59.99,
+					weight: 3.8,
+					dimension: {
+						length: 4.8,
+						width: 2.4,
+						height: 0.5
+					},
+					os: "Android 4.0",
+					inStock: true
+				};
+
+				var product2 = {
+					name: "LG Venice",
+					price: 149.99,
+					weight: 4.5,
+					dimension: {
+						length: 4.9,
+						width: 2.6,
+						height: 0.3
+					},
+					os: "Android 4.1",
+					inStock: false
+				};
+
+				var product3 = {
+					name: "BlackBerry Curve 9310",
+					price: 59.99,
+					weight: 3.5,
+					dimension: {
+						length: 4.3,
+						width: 2.4,
+						height: 0.5
+					},
+					os: "BlackBerry 7 OS",
+					inStock: true
+				};
+				
+				var products = [product1, product2, product3];
+
+
+				print("");
+				print("Exercise c)");
+				/*
+					Exercise c):
+
+					Print the name and age of all students in the given array.
+					For example like so:
+
+						John, 24 years
+						Peter, 22 years
+						...
+
+				*/
+
+				// add your solution for Exercise c) here:
+				var students1 = [
+					{name: "John", yearOfBirth: 1989},
+					{name: "Peter", yearOfBirth: 1991},
+					{name: "Jenny", yearOfBirth: 1992},
+					{name: "Dany", yearOfBirth: 1990}
+				];
+
+				for(var i = 0; i < students1.length; i++) {
+					var age = 2013 - students1[i].yearOfBirth;
+					print(students1[i].name + ", " + age + " years");
+				}
+				
+
+				print("");
+				print("Exercise d)");
+				/*
+					Exercise d):
+
+					For the given array of students, print the name and the courses
+					a student is taking.
+
+					For example like so:
+
+						John (courses: HTML)
+						Peter (courses: JavaScript, Databases)
+						...
+
+				*/
+
+				// add your solution for Exercise d) here:
+				var students2 = [
+					{name: "John", courses: ["HTML"]},
+					{name: "Peter", courses: ["JavaScript", "Databases"]},
+					{name: "Jenny", courses: ["HTML", "CSS", "Photoshop"]},
+					{name: "Dany", courses: ["PHP", "SQL"]}
+				];
+
+				for(var i = 0; i < students2.length; i++) {
+					// first build a string with all the courses
+					var courses = "";
+					if(students2[i].courses.length === 0) {
+						// if there are no courses for this student
+						courses = "no courses";
+					} else {
+						courses = students2[i].courses[0];
+
+						for(var j = 1; j < students2[i].courses.length; j++) {
+							courses += ", " + students2[i].courses[j];
+						}
+					}
+
+					print(students2[i].name + " (" + courses + ")");
+				}
+
+				
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>

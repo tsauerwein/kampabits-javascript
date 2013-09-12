@@ -311,6 +311,8 @@ if (age > 18) {
 						</code></pre>
 
 						<p><a href="../examples/011-if.htm" target="_blank">011-if.htm</a></p>
+
+						<p><small>Also note how the lines of the block are indented to the right!</small></p>
 					</div>
 				</section>
 
@@ -815,11 +817,188 @@ for(var i = 0; i < names.length; i++) {
 					<pre><code data-trim class="javascript">
 var names = ["Peter", "Michael", "John", "Bob"];
 
-for(var i = 1; i <= names.length; j++) {
+for(var i = 1; i <= nams.length; j++) {
 	print(names);
 }
 					</code></pre>
 					<p><a href="../examples/030-array-mistakes.htm" target="_blank">030-array-mistakes.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Small project: Get the maximum</h2>
+
+					<p>We are going to write a small program:</p>
+					<p>&nbsp;</p>
+
+					<ul>
+						<li>The user can enter a list of numbers (using <code>prompt()</code>
+							for each number).
+						</li>
+						<li>If the user wants to stop, he leaves the input field empty.</li>
+						<li>Then we calculate the maximum of all entered numbers.</li>
+					</ul>
+					<p>&nbsp;</p>
+
+					<p><a href="../examples/031-project-maximum.htm" target="_blank">031-project-maximum.htm</a></p>
+				</section>
+
+
+<!-- Objects -->
+
+
+				<section>
+					<h2>Introducing objects</h2>
+
+					<p>We want to store information for persons, like first name, last name, age, ...
+						<ul>
+							<li>Peter Anderson (age 34)</li>
+							<li>John Elison (age 28)</li>
+							<li>Bob Smith (age 56)</li>
+						</ul>
+					</p>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<pre><code data-trim class="javascript">
+var firstNames = ["Peter", "John", "Bob"];
+var lastNames = ["Anderson", "Elison", "Smith"];
+var ages = [34, 28, 56];
+
+// John Elison (age 28)
+print(firstNames[1] + " " + lastNames[1] + " (age " + ages[1] + ")");
+						</code></pre>
+
+						<p><a href="../examples/032-no-objects.htm" target="_blank">032-no-objects.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Introducing objects</h2>
+
+					<p>So far we know <strong>strings, numbers, booleans and arrays.</strong></p>
+					<p>Now, we will get to know <strong>objects</strong>.</p>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<pre><code data-trim class="javascript">
+var person = {
+	firstName: "Peter",
+	lastName: "Anderson",
+	age: 34
+};
+						</code></pre>
+
+						<p>Object allow to represent <em>real world things and entities</em> (like persons, houses or cars).</p>
+						<p>All relevant information is stored in one place.</p>
+						<p>&nbsp;</p>
+						<p><a href="../examples/033-object.htm" target="_blank">033-object.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Object syntax</h2>
+
+					<pre><code data-trim class="javascript">
+var person = {
+	firstName: "Peter",
+	lastName: "Anderson",
+	age: 34
+};
+					</code></pre>
+					<p>&nbsp;</p>
+					<p>Objects have <strong>properties</strong>.</p>
+					<p>Each property consists of a <strong>key/label</strong> and a <strong>value</strong>.</p>
+				</section>
+
+
+				<section>
+					<h2>Accessing object properties</h2>
+
+					<p>Reading object properties</p>
+					<pre><code data-trim class="javascript">
+print(person.firstName);
+print(person["firstName"]);
+
+print(person.firstName + " " + person.lastName 
+	+ " (age " + person.age + ")");
+					</code></pre>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>Changing object properties</p>
+						<pre><code data-trim class="javascript">
+person.firstName = "John";
+person["firstName"] = "John";
+						</code></pre>
+
+						<p><a href="../examples/033-object.htm" target="_blank">033-object.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Objects in arrays</h2>
+
+					<pre><code data-trim class="javascript">
+var peter = {
+	firstName: "Peter",
+	lastName: "Anderson",
+	age: 34
+};
+
+var john = {
+	firstName: "John",
+	lastName: "Elison",
+	age: 28
+};
+
+var bob = {
+	// ...
+};
+
+var persons = [peter, john, bob];
+
+// John Elison (age 28)
+print(persons[1].firstName + " " + persons[1].lastName 
+	+ " (age " + persons[1].age + ")");
+					</code></pre>
+					<p><a href="../examples/034-objects-in-arrays.htm" target="_blank">034-objects-in-arrays.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Different data types as properties</h2>
+
+					<pre><code data-trim class="javascript">
+var student = {
+	// strings
+	firstName: "Peter",
+	// numbers
+	age: 34,
+	// boolean
+	enrolled: true,
+	// arrays
+	courses: ["Math", "English", "Biology"],
+	// other objects
+	address: {
+		street: "Main Rd",
+		zip: "5020",
+		town: "Kampala"
+	}
+};
+					</code></pre>
+					<p><a href="../examples/035-objects-datatypes.htm" target="_blank">035-objects-datatypes.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>Exercise 6</h2>
+
+					<p>Please open the following file and follow the given instructions:</p>
+					<p><a href="../exercises/exc-006-objects.htm" target="_blank">exercises/exc-006-objects.htm</a></p>
 				</section>
 
 

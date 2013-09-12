@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				var peter = {
+					firstName: "Peter",
+					lastName: "Anderson",
+					age: 34
+				};
+
+				var john = {
+					firstName: "John",
+					lastName: "Elison",
+					age: 28
+				};
+
+				var bob = {
+					firstName: "Bob",
+					lastName: "Smith",
+					age: 56
+				};
+
+				var persons = [peter, john, bob];
+
+				// John Elison (age 28)
+				print(persons[1].firstName + " " + persons[1].lastName 
+					+ " (age " + persons[1].age + ")");
+
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>

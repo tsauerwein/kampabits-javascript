@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				var person = {
+					firstName: "Peter",
+					lastName: "Anderson",
+					age: 34
+				};
+
+				// reading the properties of an object
+				print(person.firstName);
+				print(person["firstName"]);
+
+				// changing the properties of an object
+				person.firstName = "John";
+				person["firstName"] = "John";
+
+				// Peter Anderson (age 34)
+				print(person.firstName + " " + person.lastName 
+					+ " (age " + person.age + ")");
+
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>
