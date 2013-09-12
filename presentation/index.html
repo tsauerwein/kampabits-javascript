@@ -1002,6 +1002,144 @@ var student = {
 				</section>
 
 
+
+<!-- Functions -->
+
+
+				<section>
+					<h2>Introducing functions</h2>
+
+					<p>Do you remember our program that identified the largest number in an array?</p>
+					<pre><code data-trim class="javascript">
+var numbers = [23, 89, 1, 23, 53, 103, 23];
+var largest = 0;
+
+for(var i = 0; i < numbers.length; i++) {
+	if (numbers[i] > largest) {
+		largest =  numbers[i];
+	}
+}
+				
+print(largest);
+					</code></pre>
+					<p><small>(we are assuming that the array is not empty and only contains positive numbers)</small></p>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>What if we would like to find the largest number in other arrays?</p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Introducing functions</h2>
+
+					<p>A function to find the largest element in an array</p>
+					<pre><code data-trim class="javascript">
+var maximum = function(numbers) {
+	var largest = 0;
+
+	for(var i = 0; i < numbers.length; i++) {
+		if (numbers[i] > largest) {
+			largest =  numbers[i];
+		}
+	}
+
+	return largest;
+}
+					</code></pre>
+					<div class="fragment">
+						<pre><code data-trim class="javascript">
+var numbers1 = [34, 23, 65, 12, 97];
+print(maximum(numbers1));	// 97
+
+var numbers2 = [121, 34, 12, 75, 31, 12];
+print(maximum(numbers2));	// 121
+						</code></pre>
+						<p><small>(again we are assuming that the array is not empty and only contains positive numbers)</small></p>
+						<p><a href="../examples/036-functions.htm" target="_blank">036-functions.htm</a></p>
+					</div>
+					
+				</section>
+
+
+				<section>
+					<h2>A simpler example</h2>
+
+					<p>Function definition or declaration</p>
+					<pre><code data-trim class="javascript">
+var sayHello = function() {
+	print("Hello");
+}
+					</code></pre>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>Function call or invocation</p>
+						<pre><code data-trim class="javascript">
+sayHello();
+						</code></pre>
+
+						<p><a href="../examples/037-simple-function.htm" target="_blank">037-simple-function.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Parameter</h2>
+
+					<p>A function with one parameter or argument</p>
+					<pre><code data-trim class="javascript">
+var sayHello1 = function(name) {
+	print("Hello " + name);
+}
+
+sayHello1("Peter");
+					</code></pre>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p>A function with two parameters or arguments</p>
+						<pre><code data-trim class="javascript">
+var sayHello2 = function(firstName, lastName) {
+	print("Hello " + firstName + " " + lastName);
+}
+
+sayHello2("Peter", "Anderson");
+						</code></pre>
+
+						<p><a href="../examples/038-parameter.htm" target="_blank">038-parameter.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Return values</h2>
+
+					<p>A function with a return value</p>
+					<pre><code data-trim class="javascript">
+var area = function(width, height) {
+	var areaBox = width * height;
+	return areaBox;
+}
+					</code></pre>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<pre><code data-trim class="javascript">
+var area1 = area(10, 20);
+print("The area is: " + area1);
+
+var area2 = area(30, 80);
+print("The area is: " + area2);
+						</code></pre>
+
+						<p><a href="../examples/039-return.htm" target="_blank">039-return.htm</a></p>
+					</div>
+				</section>
+
+
+
 			</div>
 
 		</div>

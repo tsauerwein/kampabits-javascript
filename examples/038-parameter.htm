@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				// function with one parameter
+				var sayHello1 = function(name) {
+					print("Hello " + name);
+				}
+
+				sayHello1("Peter");
+
+				// function with two parameters
+				var sayHello2 = function(firstName, lastName) {
+					print("Hello " + firstName + " " + lastName);
+				}
+
+				sayHello2("Peter", "Anderson");
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				// function with a return value
+				var area = function(width, height) {
+					var areaBox = width * height;
+					return areaBox;
+				}
+
+				var area1 = area(10, 20);
+				print("The area is: " + area1);
+
+				var area2 = area(30, 80);
+				print("The area is: " + area2);
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>
