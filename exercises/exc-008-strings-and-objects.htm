@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+
+				print("Exercise a)");
+				/*
+					Exercise a):
+
+					Write a function "contains(text, search)" which returns true
+					if the string "search" can be found in the string "text". Otherwise
+					the function should return false.
+
+					For example:
+						contains("This is some text", "is") should return: true
+						contains("This is some text", "some") should return: true
+						contains("This is some text", "xyz") should return: false
+
+				*/
+
+				// add your solution for Exercise a) here:
+				// ...
+
+
+				// print(contains("This is some text", "is"));
+				// print(contains("This is some text", "some"));
+				// print(contains("This is some text", "xyz"));
+
+
+				print("");
+				print("Exercise b)");
+				/*
+					Exercise b):
+
+					Below, two class constructors are defined: Student and School.
+					A Student object has a name and an array of courses the student 
+					is attending. A School object has an array of students and two methods. 
+					The method "addStudent(student)" is used to add students to the
+					school. The method "findStudentsByCourse(course)" prints the
+					names of all students that attend the given course.
+
+					Your job is to implement the method "findStudentsByCourse(course)".
+
+					For example:
+
+						school.findStudentsByCourse("HTML") should print: "John, Jenny"
+						school.findStudentsByCourse("CSS") should print: "Jenny"
+						school.findStudentsByCourse("JavaScript") should print: "Peter"
+						school.findStudentsByCourse("OOP") should print: ""
+
+				*/
+
+				// Solution for Exercise b):
+				var Student = function(name, courses) {
+					// the name of the student
+					this.name = name;
+					// an array of courses the student is attending
+					this.courses = courses;
+				};
+
+				var School = function() {
+					// an array of students
+					this.students = [];
+
+					this.findStudentsByCourse = function(course) {
+						// add you implementation here:
+						// ...
+					};
+
+					// a method to add students to the school
+					this.addStudent = function(student) {
+						this.students.push(student);
+					};
+				};
+
+				var school = new School();
+				school.addStudent(new Student("John", ["HTML"]));
+				school.addStudent(new Student("Peter", ["JavaScript", "Databases"]));
+				school.addStudent(new Student("Jenny", ["HTML", "CSS", "Photoshop"]));
+				school.addStudent(new Student("Dany", ["PHP", "SQL"]));
+
+				school.findStudentsByCourse("HTML"); 
+				school.findStudentsByCourse("CSS");
+				school.findStudentsByCourse("JavaScript");
+				school.findStudentsByCourse("OOP");
+
+
+				print("");
+				print("Exercise c)");
+				/*
+					Exercise c):
+
+					We are going to write an address book. An address book
+					has a list of contacts. A contact has the attributes name
+					and email.
+					
+					First, your job is to write the Contact constructor.
+					Then, you will have to implement the method "addContact(contact)"
+					in AddressBook, which adds a contact to the address book.
+					Next, the method "findByName(name)" has to implemented, which
+					prints all contacts with the given name.
+
+					For example:
+						addressBook.findByName("Peter") should print "Peter (peter@gmail.com)"
+						addressBook.findByName("Lucy") should print "Lucy (lucy@gmail.com)"
+						addressBook.findByName("Bob") should print "Bob can not be found"
+
+				*/
+
+				// Solution for Exercise c):
+
+				// add the implementation for the Contact constructor here:
+				// var Contact = ...
+
+				var AddressBook = function() {
+					// the list of contacts of the address book
+					this.contacts = [];
+
+					// adds a contact to the address book
+					this.addContact =  function(contact) {
+						// add the implementation for this method
+						// ...
+					};
+
+					// searches the contact with the given name and prints
+					// its details
+					this.findByName =  function(name) {
+						// add the implementation for this method
+						// ...
+					};
+				};
+
+				var addressBook = new AddressBook();
+
+				// uncomment the following lines to test your address book
+				/*
+				addressBook.addContact(new Contact("John", "john@gmail.com"));
+				addressBook.addContact(new Contact("Peter", "peter@gmail.com"));
+				addressBook.addContact(new Contact("Jenny", "jenny@gmail.com"));
+				addressBook.addContact(new Contact("Lucy", "lucy@gmail.com"));
+
+				addressBook.findByName("Peter");
+				addressBook.findByName("Lucy");
+				addressBook.findByName("Bob");
+				*/
+				
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>
