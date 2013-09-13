@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+
+				print("Exercise a)");
+				/*
+					Exercise a):
+
+					We will write a function "max(a, b)" that accepts
+					two numbers a and b. The function should return
+					the larger number.
+
+					For example:
+						max(1, 2) should return 2
+						max(-4, 3) should return 3
+
+					Complete the body of the function provided below!
+				*/
+
+				// Solution for Exercise a):
+				var max = function(a, b) {
+					// add the implementation for the function here
+					// ...
+				};
+				
+				print(max(4, 8));
+				print(max(99, 101));
+				print(max(-1, 0));
+
+
+
+				print("");
+				print("Exercise b)");
+				/*
+					Exercise b):
+
+					We will write a function to print out information
+					about a student.
+					The function "printStudent(student)" receives a student
+					object and is supposed to show the information for this student.
+
+					For example, the function should print the following output
+					for the first student in the array "students":
+
+						John Anderson
+						24 years
+						Courses: HTML
+						---------------------
+
+					Complete the body of the function provided below!
+
+				*/
+
+				// Solution for Exercise b):
+				var printStudent = function(student) {
+					// add the implementation for the function here
+					// ...
+				};
+
+				var students = [
+					{firstName: "John", lastName: "Anderson", yearOfBirth: 1989, 
+						courses: ["HTML"]},
+					{firstName: "Peter", lastName: "Smith", yearOfBirth: 1991, 
+						courses: ["JavaScript", "Databases"]},
+					{firstName: "Jenny", lastName: "James", yearOfBirth: 1992, 
+						courses: ["HTML", "CSS", "Photoshop"]},
+					{firstName: "Dany", lastName: "Derek", yearOfBirth: 1990, 
+						courses: ["PHP", "SQL"]}
+				];
+				
+				// the function is called for every student
+				for(var i = 0; i < students.length; i++) {
+					printStudent(students[i]);
+				}
+
+
+
+				print("");
+				print("Exercise c)");
+				/*
+					Exercise c):
+
+					Write a function "minimum(numbers)" that finds the smallest
+					number in the array "numbers".
+
+					For example:
+
+						minimum([-5, -10, 1, 2, 23]) should return -10
+						minimum([]) should return undefined
+
+					Note that the array "numbers" can contain positive and
+					negative numbers, and might also be empty.
+
+				*/
+
+				// Solution for Exercise c):
+
+				// add the definition of the function minimum(numbers) here:
+				// var minimum = ...
+				
+
+				// uncomment to following lines to test you implementation
+				// print(minimum([-5, -10, 1, 2, 23]));
+				// print(minimum([]));
+
+
+
+				print("");
+				print("Exercise d)");
+				/*
+					Exercise d):
+
+					Write a function "filterNegatives(numbers)" that returns
+					an array with all the negative numbers from the
+					array "numbers".
+
+					For example:
+
+						filterNegatives([-1, 3, -5, 5, 8]) should return [-1, -5]
+						filterNegatives([1, 3, 5, 6, 8]) should return []
+						filterNegatives([-1, -3, -5, -6, -8]) should return [-1, -3, -5, -6, -8]
+						filterNegatives([]) should return []
+
+				*/
+
+				// Solution for Exercise d):
+
+				// add the definition of the function filterNegatives(numbers) here:
+				// var filterNegatives = ...
+				
+				// uncomment to following lines to test you implementation
+				// print(filterNegatives([-1, 3, -5, 5, 8]));
+				// print(filterNegatives([1, 3, 5, 6, 8]));
+				// print(filterNegatives([-1, -3, -5, -6, -8]));
+				// print(filterNegatives([]));
+
+				
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>
