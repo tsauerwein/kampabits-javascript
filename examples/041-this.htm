@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				var student = {
+					firstName: "John",
+					lastName: "Anderson",
+
+					printName: function() {
+						print(this.firstName + " " + this.lastName);
+					}
+				};
+
+				student.printName();
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>

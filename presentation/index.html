@@ -54,6 +54,8 @@
 							Mozilla Developer Network: JavaScript (Guide, Reference, Links)</a></li>
 						<li><a href="http://www.codecademy.com/tracks/javascript" target="_blank">
 							Codecademy: Interactive online JavaScript course</a></li>
+						<li><a href="http://www.codecademy.com/glossary/javascript" target="_blank">
+							Codecademy: JavaScript Glossary</a></li>
 					</ul>
 				</section>
 
@@ -1144,6 +1146,236 @@ print("The area is: " + area2);
 
 					<p>Please open the following file and follow the given instructions:</p>
 					<p><a href="../exercises/exc-007-functions.htm" target="_blank">exercises/exc-007-functions.htm</a></p>
+				</section>
+
+
+
+<!-- Methods -->
+
+
+				<section>
+					<h2>Revisiting objects</h2>
+
+					<pre><code data-trim class="javascript">
+var student = {
+	firstName: "John",
+	lastName: "Anderson",
+	// ...
+};
+					</code></pre>
+				</section>
+
+
+				<section>
+					<h2>Let's add functions to objects!</h2>
+
+					<pre><code data-trim class="javascript">
+var student = {
+	firstName: "John",
+	lastName: "Anderson",
+
+	sayHello: function() {
+		print("Hello!");
+	}
+};
+					</code></pre>
+					<pre><code data-trim class="javascript">
+student.sayHello();
+					</code></pre>
+
+					<p>These functions are called <strong>methods</strong>.</p>
+					<p>&nbsp;</p>
+
+					<p><a href="../examples/040-methods.htm" target="_blank">040-methods.htm</a></p>
+				</section>
+
+
+				<section>
+					<h2>This and that</h2>
+
+					<p>The keyword <code>this</code> allows to reference other
+						properties of an object.</p>
+					<pre><code data-trim class="javascript">
+var student = {
+	firstName: "John",
+	lastName: "Anderson",
+
+	printName: function() {
+		print(this.firstName + " " + this.lastName);
+	}
+};
+					</code></pre>
+					<pre><code data-trim class="javascript">
+student.printName();
+					</code></pre>
+					<p><a href="../examples/041-this.htm" target="_blank">041-this.htm</a></p>
+				</section>
+
+
+
+<!-- String functions -->
+
+
+				<section>
+					<h2>More about strings</h2>
+					<p>A few properties and predefined methods that make it easier to work with strings.</p>
+					<p>&nbsp;</p>
+
+					<p><code>length</code></p>
+					<pre><code data-trim class="javascript">
+print("some text".length);
+					</code></pre>
+
+					<div class="fragment">
+						<p><code>toUpperCase()</code> and <code>toLowerCase()</code></p>
+						<pre><code data-trim class="javascript">
+print("Some text".toUpperCase()); // SOME TEXT
+print("Some text".toLowerCase()); // some text
+						</code></pre>
+					</div>
+
+					<div class="fragment">
+						<p><code>trim()</code></p>
+						<pre><code data-trim class="javascript">
+print("    Some text    ".trim()); // "Some text"
+						</code></pre>
+						<small>removes whitespaces at the ends</small>
+						<p><a href="../examples/042-string-functions.htm" target="_blank">042-string-functions.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>More string functions</h2>
+					<p><code>replace()</code></p>
+					<pre><code data-trim class="javascript">
+print("Some text".replace("text", "tea")); // "Some tea"
+					</code></pre>
+
+					<div class="fragment">
+						<p><code>charAt(index)</code></p>
+						<pre><code data-trim class="javascript">
+print("Some text".charAt(0)); // "S"
+print("Some text".charAt(1)); // "o"
+						</code></pre>
+					</div>
+
+					<div class="fragment">
+						<p><code>substring(indexA[, indexB])</code></p>
+						<pre><code data-trim class="javascript">
+print("Some text".substring(5));    // "text"
+print("Some text".substring(2, 4)); // "me"
+						</code></pre>
+					</div>
+
+					<div class="fragment">
+						<p><code>indexOf(text)</code></p>
+						<pre><code data-trim class="javascript">
+print("Some text".indexOf("text")); // 5
+print("Some text".indexOf("Text")); // -1
+print("Some text".indexOf("me"));   // 2
+						</code></pre>
+						<p><a href="../examples/042-string-functions.htm" target="_blank">042-string-functions.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>Strings and arrays</h2>
+					<p><code>split(separator)</code></p>
+					<pre><code data-trim class="javascript">
+var text = "HTML, CSS, Photoshop, PHP";
+var courses = text.split(","); // [HTML, CSS, Photoshop, PHP]
+					</code></pre>
+					<small>split a text into an array of strings using a separator</small>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<p><code>join(separator)</code></p>
+						<pre><code data-trim class="javascript">
+print(courses.join("-")); // "HTML - CSS - Photoshop - PHP"
+						</code></pre>
+						<small>all array elements are joined to a string using a separator</small>
+						<p><a href="../examples/043-strings-arrays.htm" target="_blank">043-strings-arrays.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>More string and array functions</h2>
+					<p>More functions can be found here:</p>
+					<ul>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/prototype#Methods" target="_blank">MDN Reference: String Methods</a></li>
+						<li><a href="http://www.impressivewebs.com/javascript-string-methods-reference/" target="_blank">JavaScript String Methods Reference</a></li>
+						<li><a href="http://www.impressivewebs.com/javascript-array-methods-reference/" target="_blank">JavaScript Array Methods Reference</a></li>
+					</ul>
+				</section>
+
+
+
+<!-- Constructor function -->
+
+
+				<section>
+					<h2>Constructing objects</h2>
+
+					<pre><code data-trim class="javascript">
+var peter = {
+	firstName: "Peter",
+	lastName: "Anderson",
+	age: 34
+};
+
+var john = {
+	firstName: "John",
+	lastName: "Elison",
+	age: 28
+};
+
+var bob = {
+	// ...
+};
+					</code></pre>
+				</section>
+
+
+				<section>
+					<h2>Constructors</h2>
+
+					<p><strong>Constructors</strong> - Functions to create new objects of a <strong>class</strong></p>
+					<pre><code data-trim class="javascript">
+var Student = function(firstName, lastName, age) {
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.age = age;
+
+	this.printName = function() {
+		print(this.firstName + " " + this.lastName);
+	};
+};
+					</code></pre>
+					<small>Note: The name of the constructor starts with a capital letter!</small>
+
+					<div class="fragment">
+						<pre><code data-trim class="javascript">
+var peter = new Student("Peter", "Anderson");
+var john = new Student("John", "Elison");
+						</code></pre>
+						<small><strong>new</strong> creates a new object using the <code>Student</code> constructor.</small>
+						<p><a href="../examples/044-constructor.htm" target="_blank">044-constructor.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>OOP</h2>
+					<p>More about <strong>Object-Oriented-Programming</strong>:</p>
+					<ul>
+						<li><a href="http://www.codecademy.com/tracks/javascript" target="_blank">Codecademy Online Course: Object I and II</a></li>
+						<li><a href="http://htmldog.com/guides/javascript/advanced/oo/" target="_blank">HTML Dog: Object-Oriented Code</a></li>
+						<li><a href="https://eloquentjavascript.net/chapter8.html" target="_blank">Eloquent JavaScript: Object-oriented Programming</a></li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" target="_blank">MDN: Introduction to Object-Oriented JavaScript</a></li>
+					</ul>
 				</section>
 
 

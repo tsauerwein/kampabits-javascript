@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				// length
+				print("some text".length); // 9
+
+				// toUpperCase()
+				print("Some text".toUpperCase()); // "SOME TEXT"
+
+				// toLowerCase()
+				print("Some text".toLowerCase()); // "some text"
+
+				// trim()
+				print("    Some text    ".trim()); // "Some text"
+
+				// replace()
+				print("Some text".replace("text", "tea")); // "Some tea"
+
+				// charAt(index)
+				print("Some text".charAt(0)); // "S"
+				print("Some text".charAt(1)); // "o"
+
+				// substring(indexA[, indexB])
+				print("Some text".substring(5)); // "text"
+				print("Some text".substring(2, 4)); // "me"
+
+				// indexOf(text)
+				print("Some text".indexOf("text")); // 5
+				print("Some text".indexOf("Text")); // -1
+				print("Some text".indexOf("me")); // 2
+
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>

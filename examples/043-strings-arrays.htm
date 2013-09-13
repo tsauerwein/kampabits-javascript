@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				// split(separator)
+				var text = "HTML, CSS, Photoshop, PHP";
+				var courses = text.split(","); // [HTML, CSS, Photoshop, PHP]
+
+				// join(separator)
+				print(courses.join("-")); // "HTML - CSS - Photoshop - PHP"
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>
