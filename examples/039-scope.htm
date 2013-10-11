@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="../utils.js"></script>
+
+		<script type="text/javascript">
+			function doIt() {
+				var a = "outside";
+
+				var f = function() {
+				  var a = "inside";
+				};
+
+				print(a); // prints 'outside'
+				f();
+				print(a); // still prints 'outside'
+			}
+		</script>
+	</head>
+
+	<body onload="doIt()">
+		<div id="output"></div>
+	</body>
+</html>

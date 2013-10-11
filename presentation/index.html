@@ -1143,6 +1143,31 @@ print("The area is: " + area2);
 
 
 				<section>
+					<h2>Scope</h2>
+
+					<p>Functions and variable scope</p>
+					<pre><code data-trim class="javascript">
+var a = "outside";
+
+var f = function() {
+  var a = "inside";
+};
+
+print(a); // prints 'outside'
+f();
+print(a); // still prints 'outside'
+					</code></pre>
+
+
+					<div class="fragment">
+						<p><small>2 variables with the same name but with a different scope</small></p>
+
+						<p><a href="../examples/039-scope.htm" target="_blank">039-scope.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
 					<h2>Alternative syntax</h2>
 
 					<p>A function can also be defined like so:</p>
