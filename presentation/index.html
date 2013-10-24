@@ -456,6 +456,29 @@ if (points > 80) {
 
 
 				<section>
+					<h2>number()</h2>
+
+					<pre><code data-trim class="javascript">
+var number1 = prompt("Please enter a number");
+alert(number1 === 1);
+					</code></pre>
+					<p><small>This test will also return <code>false</code>, because
+						<code>number1</code> is a string.</small></p>
+
+					<div class="fragment">
+						<p>&nbsp;</p>
+						<pre><code data-trim class="javascript">
+var number2 = Number(prompt("Please enter a number"));
+alert(number2 === 1);
+						</code></pre>
+						<p><small><strong><code>Number()</code></strong> converts a string into a number.</small></p>
+
+						<p><a href="../examples/015-number.htm" target="_blank">015-number.htm</a></p>
+					</div>
+				</section>
+
+
+				<section>
 					<h2>Exercise 2</h2>
 
 					<p>Please open the following file and follow the given instructions:</p>
