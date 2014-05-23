@@ -1,7 +1,7 @@
 JavaScript Course
 =========
 
-This repository contains slides, examples and exercises for a  JavaScript course that was originally taught at [KamapaBits](http://kampabits.org).
+This repository contains slides, examples and exercises for a  JavaScript course that was originally taught at [KampaBits](http://www.bitsacademy.org/bits-family.html).
 
 The tutorial of [HTML Dog](http://htmldog.com/), the book [*Eloquent JavaScript*](https://eloquentjavascript.net/) and the interactive courses at [Codecademy](http://www.codecademy.com) were used to design this course.
 
